@@ -3,7 +3,7 @@
 
 <style type="text/css">
 <!--
-.box{max-width:720px;margin:auto;}
+.base{max-width:720px;margin:auto;}
 .title{width:312px;font-weight:bold; text-align:center;border-left:1px solid #000;border-right:1px solid #000;margin:auto;}
 .tab{list-style:none;margin:0;padding:0;text-align:right;font-size:0;}
 .tab li{display:inline-block;width:50%;margin:10px 0;text-align:left;font-weight:bold;letter-spacing:2px;border:1px solid #000;box-sizing:border-box;font-size:11px;line-height:2;}
@@ -22,9 +22,9 @@
 	<li><a href=#box><p>ボックス表現</p></a></li>
 </ul>
 
-<div class="box" id="tab"><p class="title">TAB</p></div>
+<div class="base" id="tab"><p class="title">TAB</p></div>
 
-<div style="max-width:720px;margin:auto;">
+<div class="base">
 	<ul class="tab">
 		<li><a href=#tab><p style="text-align:center;">TAB</p></a></li>
 		<li><a href=#box><p style="text-align:center;">BOX</p></a></li>
@@ -33,7 +33,7 @@
 	</ul>
 </div>
 
-<div style="max-width:720px;margin:auto;">
+<div class="base">
 	<ul>
 		<li><a href=#tab><p>TAB</p></a></li>
 		<li><a href=#box><p>BOX</p></a></li>
@@ -42,9 +42,9 @@
 	</ul>
 </div>
 
-<div style="max-width:720px;margin:auto;" id="box"><p style="width:312px;font-weight:bold; text-align:center;border-left:1px solid #000;border-right:1px solid #000;margin:auto;">BOX</p></div>
+<div class="base" id="box"><p class="title">BOX</p></div>
 
-<div style="max-width:720px;margin:auto;">
+<div class="base">
 	<div style="width:200px; margin-right:60px;float:left;"><p style="text-align:center;">aaa</p></div>
 	<div style="width:200px; margin-right:60px;float:left;"><p style="text-align:center;">aaa</p></div>
 	<div style="width:200px;float:left;"><p style="text-align:center;">bbb</p></div>
